@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<title>Redirecting to https://example.com/</title>
+<meta charset="utf-8">
+<title>Redirecting to the app!/</title>
 
-<script>const queryParams=window.location.search; const queryString={`0; URL=cvCreator://com.cvcreator/auth/linkedin/callback${queryParams}`};
-  let metaTag=document.getElementByTagName("meta");
-  metaTag.content=queryString;</script>
-<meta http-equiv="refresh" content="">
+<script>const queryParams=window.location.search; const queryString={`0; URL=cvCreator://com.cvcreator/auth/linkedin/callback${queryParams}`};</script>
+<meta http-equiv="refresh" content="0; url=$queryString">
 <link rel="canonical" href="cvCreator://com.cvcreator/auth/linkedin/callback">
