@@ -5,6 +5,6 @@
 <script>
   const queryParams=window.location.search; 
   const queryString={`cvCreator://com.cvcreator/auth/linkedin/callback${queryParams}`};
-  var content = '0;url=' + queryString;
+  var content = '0;url=cvCreator://com.cvcreator/auth/linkedin/callback' + queryParams;
   document.write('<meta http-equiv="refresh" content="'+content + '"/>');
 </script>
