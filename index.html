@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Redirecting to https://example.com/</title>
+<meta http-equiv="refresh" content="">
 <script>const queryParams=window.location.search; const queryString={`0; URL=cvCreator://com.cvcreator/auth/linkedin/callback${queryParams}`};
-console.log("updated2")</script>
-<meta http-equiv="refresh" content=queryString>
+  const metaTags=document.getElementsByTagName("meta");
+  for (i = 0; i < metaTags.length; i++) {
+ let test = metaTags[i].getAttribute('http-equiv');
+ if(test == "refresh")
+ {
+   metaTags[i].content = queryString;
+ }
+}
+console.log("updated3")</script>
 <link rel="canonical" href="cvCreator://com.cvcreator/auth/linkedin/callback">
