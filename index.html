@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Redirecting to https://example.com/</title>
-<script>const queryString=window.location.search;
-console.log("updated")</script>
-<meta http-equiv="refresh" content={`0; URL=cvCreator://com.cvcreator/auth/linkedin/callback${queryString}`}>
+<script>const queryParams=window.location.search; const queryString={`0; URL=cvCreator://com.cvcreator/auth/linkedin/callback${queryParams}`};
+console.log("updated2")</script>
+<meta http-equiv="refresh" content=queryString>
 <link rel="canonical" href="cvCreator://com.cvcreator/auth/linkedin/callback">
