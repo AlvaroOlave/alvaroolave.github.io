@@ -2,6 +2,6 @@
 <meta charset="utf-8">
 <title>Redirecting to https://example.com/</title>
 <script>const queryString=window.location.search;
-console.log(queryString)</script>
-<meta http-equiv="refresh" content="0; URL=cvCreator://com.cvcreator/auth/linkedin/callback">
+console.log("updated")</script>
+<meta http-equiv="refresh" content={`0; URL=cvCreator://com.cvcreator/auth/linkedin/callback${queryString}`}>
 <link rel="canonical" href="cvCreator://com.cvcreator/auth/linkedin/callback">
