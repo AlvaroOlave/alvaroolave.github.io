@@ -1,14 +1,30 @@
 body {
    font-family: Arial, sans-serif;
    margin: 20px;
+   background-color: #f4f4f4;
+   color: #333;
 }
 header {
    text-align: center;
+   margin-bottom: 20px;
 }
-.about, .experience {
-   margin-top: 20px;
+section {
+   background-color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   margin-bottom: 20px;
 }
-footer {
-   margin-top: 50px;
-   text-align: center;
+h2 {
+   color: #333;
+}
+ul {
+   list-style: none;
+   padding: 0;
+}
+li {
+   margin-bottom: 15px;
+}
+a {
+   color: #0077b5;
+   text-decoration: none;
 }
