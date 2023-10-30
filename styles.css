@@ -1,0 +1,14 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 20px;
+}
+header {
+   text-align: center;
+}
+.about, .experience {
+   margin-top: 20px;
+}
+footer {
+   margin-top: 50px;
+   text-align: center;
+}
