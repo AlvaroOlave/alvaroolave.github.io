@@ -1,9 +1,48 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Redirecting to the app!/</title>
-
-<script>
-  const queryParams=window.location.search; 
-  var content = '0;url=cvCreator://com.cvcreator/auth/linkedin/callback' + queryParams;
-  document.write('<meta http-equiv="refresh" content="'+content + '"/>');
-</script>
+<html>
+<head>
+<title>Mi Landing Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>Alvaro Olave Bañeres</h1>
+<p>iOS Developer</p>
+</header>
+<section class="about">
+<h2>Acerca de Mí</h2>
+<p>Información personal...</p>
+</section>
+<section class="experience">
+<h2>Experiencia Laboral</h2>
+<ul>
+<li>
+<h3>Nombre del Puesto</h3>
+<p>Empresa - Fecha inicio / Fecha fin</p>
+<p>Descripción del trabajo...</p>
+</li>
+<!-- Puedes añadir más elementos de lista para experiencias adicionales -->
+</ul>
+</section>
+<section class="education">
+<h2>Educación</h2>
+<ul>
+<li>
+<h3>Título Académico</h3>
+<p>Universidad - Fecha inicio / Fecha fin</p>
+<p>Descripción de la educación...</p>
+</li>
+<!-- Puedes añadir más elementos de lista para diferentes niveles educativos -->
+</ul>
+</section>
+<section class="skills">
+<h2>Habilidades</h2>
+<p>Lista de habilidades...</p>
+</section>
+<section class="contact">
+<h2>Contacto</h2>
+<p>Email: ejemplo@email.com</p>
+<p>LinkedIn: <a href="URL_de_tu_perfil">Tu perfil de LinkedIn</a></p>
+</section>
+</body>
+</html>
