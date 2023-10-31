@@ -15,8 +15,8 @@ body {
     display: flex;
     justify-content: flex-end;
     padding: 10px 20px;
-    background: #333646;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 .tab-buttons button {
     margin-right: 10px;
@@ -36,9 +36,12 @@ body {
     color: #fff;
 }
 header {
+    background-image: url('headerBackground.jpg');
     background-color: #333646;
+    background-size: cover;
+    background-position: center;
     color: #fff;
-    padding: 60px 0;
+    padding: 30px 0;
 }
 .header-content {
     display: flex;
@@ -90,7 +93,6 @@ header {
 }
 .info-sections {
     display: flex;
-    
     gap: 20px;
     background-color: #282a38;
     min-height: 55vh;
@@ -103,6 +105,11 @@ header {
     .header-image {
         display: block;
     }
+    .projects,
+    .experience,
+    .contactMe {
+        flex: 50%;
+    }
 }
 @media screen and (max-width: 1099px) {
     .info-sections {
@@ -112,12 +119,17 @@ header {
     .header-image {
         display: none;
     }
+    .projects,
+    .experience,
+    .contactMe {
+        flex: 100%;
+    }
 }
 .projects,
 .experience,
-.contactMe,
-/* Otras secciones */ {
-    background-color: #fff;
+.contactMe {
+    border: 1px solid #333646;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -130,16 +142,14 @@ header {
     margin: 20px;
     word-wrap: break-word;
 }
-.contactMe,
-/* Otras secciones */ p {
+.contactMe p {
     color: #f3f3f3;
     font-size: 25px;
     margin-top: 10px;
     margin-left: 20px;
     word-wrap: break-word;
 }
-.contactMe,
-/* Otras secciones */ a {
+.contactMe a {
     color: #ed805c;
     font-size: 25px;
     margin-top: 10px;
@@ -186,4 +196,14 @@ hr {
     color: #f3f3f3;
     width: 20%;
     margin-left: 0;
+}
+footer {
+    background-color: #282a38;
+}
+footer a {
+    color: #f3f3f355;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
 }
