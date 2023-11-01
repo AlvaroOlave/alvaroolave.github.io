@@ -38,8 +38,8 @@ body {
 header {
     background-image: url('headerBackground.jpg');
     background-color: #333646;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: left;
     color: #fff;
     padding: 30px 0;
 }
@@ -53,19 +53,19 @@ header {
     padding: 20px;
 }
 .header-text h1 {
-    font-size: 1.0em;
+    font-size: min(max(1.5vw, 0.8em), 1.6em);
     font-weight: lighter;
     margin: 10px 0;
     color: #f3f3f3;
 }
 .header-text h2 {
-    font-size: 2.8em;
+    font-size: min(max(3.2vw, 1.4em), 2.8em);
     font-weight: bold;
     margin: 10px 0;
     color: #f3f3f3;
 }
 .header-text p {
-    font-size: 1.5em;
+    font-size: min(max(2.0vw, 1.0em), 2.0em);
     font-weight: lighter;
     color: #f3f3f3;
     margin: 10px 0;
@@ -97,7 +97,7 @@ header {
     background-color: #282a38;
     min-height: 55vh;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 800px) {
     .info-sections {
         flex-direction: row;
        grid-template-columns: repeat(2, 1fr); /* Dos columnas si el ancho de la pantalla es al menos 600px */
@@ -111,7 +111,7 @@ header {
         flex: 50%;
     }
 }
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 799px) {
     .info-sections {
         flex-direction: column;
        grid-template-columns: repeat(1, 1fr); /* Una columna si el ancho de la pantalla es menor a 600px */
@@ -138,47 +138,47 @@ header {
 .contactMe,
 /* Otras secciones */ h2 {
     color: #f3f3f3;
-    font-size: 20px;
+    font-size: min(max(1.8vw, 0.9em), 1.8em);
     margin: 20px;
     word-wrap: break-word;
 }
 .contactMe p {
     color: #f3f3f3;
-    font-size: 25px;
+    font-size: min(max(2.0vw, 1.0em), 2.0em);
     margin-top: 10px;
     margin-left: 20px;
     word-wrap: break-word;
 }
 .contactMe a {
     color: #ed805c;
-    font-size: 25px;
+    font-size: min(max(2.0vw, 1.0em), 2.0em);
     margin-top: 10px;
     margin-left: 20px;
     word-wrap: break-word;
 }
 .job h3 {
     color: #f3f3f3;
-    font-size: 20px;
+    font-size: min(max(1.8vw, 0.9em), 1.8em);
     margin-top: 10px;
     margin-left: 20px;
     word-wrap: break-word;
 }
 .job p {
     color: #f3f3f3;
-    font-size: 15px;
+    font-size: min(max(1.5vw, 0.75em), 1.5em);
     margin-left: 60px;
     word-wrap: break-word;
 }
 .urlLink a {
     color: #f3f3f3;
-    font-size: 25px;
+    font-size: min(max(2.0vw, 1.0em), 2.0em);
     margin-top: 10px;
     margin-left: 20px;
     word-wrap: break-word;
 }
 .urlLink p {
     color: #f3f3f3;
-    font-size: 20px;
+    font-size: min(max(1.8vw, 0.9em), 1.8em);
     margin-top: 10px;
     margin-left: 20px;
     word-wrap: break-word;
